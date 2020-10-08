@@ -1,17 +1,23 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-  const expandsMore = document.querySelectorAll('[expand-more]')
-  
-  function expand() {
-    const showContent = document.getElementById(this.dataset.target)
-    if (showContent.classList.contains('expand-active')){
-      this.innerHTML =this.dataset.showtext;
-    }else{
-      this.innerHTML=this.dataset.hidetext
-    }
-    showContent.classList.toggle('expand-active')
-  }
-  expandsMore.forEach(expandMore=>{
-    expandMore.addEventListener('click', expand)
-  })
-})
 
+
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
