@@ -110,49 +110,14 @@ body {font-family: "Lato", sans-serif}
 <!-- End Page Content -->
 </div>
 
-<!-- Image of location/map -->
-<img src="https://i.pinimg.com/originals/80/6d/73/806d7321d477613d573b5218059332d3.jpg" height="800" width="1450">
+
 <!-- Footer -->
 <footer class="m3-container m3-padding-64 m3-center m3-opacity m3-light-grey m3-jumbo">
   <a href="https://www.instagram.com/covid.cases/"><i class="fa fa-instagram m3-hover-opacity"></i></i></a>
   
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("m3-show") == -1) {
-    x.className += " m3-show";
-  } else { 
-    x.className = x.className.replace(" m3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('contact');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 </body>
 </html>
