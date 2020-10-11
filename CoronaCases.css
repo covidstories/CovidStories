@@ -288,7 +288,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3{display: none}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4{display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */

@@ -44,8 +44,7 @@
         <a href="#" class="m3-bar-item m3-button m3-padding-large m3-hide-small m3-hover-red">HOME</a>
         <a href="#contact" class="m3-bar-item m3-button m3-padding-large m3-hide-small">CONTACT</a>
         <a href="#media" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">MEDIA</a>
-        <a href="#donations" class="m3-bar-item m3-button m3-padding-large"
-          onclick="myFunction()">DONATIONS</a>
+        <a href="#donations" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">DONATIONS</a>
         <a href="#masks" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">MASKS</a>
         <div class="m3-dropdown-hover m3-hide-small">
           <button class="m3-padding-large m3-button " title="More"><a href=getHelp.html>GET HELP</a><i
@@ -64,17 +63,11 @@
       </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="m3-bar-block m3-black m3-hide m3-hide-large m3-hide-medium m3-top" style="margin-top:46px">
-  <a href="#band" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="m3-bar-item m3-button m3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+
 
     <!-- Page content -->
     <div class="m3-content" style="max-width:2000px;margin-top:46px;background-color: black;">
-      
+
     </div>
 
 
@@ -118,12 +111,17 @@
 
     </div>
 
-    <a href ="https://oldnavy.gap.com/browse/product.do?pid=654503042&vid=1&policy=1#pdp-page-content"><div class="mySlides3 m3-center">
-      <img src="mask2.jpg" style="width:40%">
-    </div></a>
+    <a href="https://oldnavy.gap.com/browse/product.do?pid=654503042&vid=1&policy=1#pdp-page-content">
+      <div class="mySlides3 m3-center">
+        <img src="mask2.jpg" style="width:40%">
+      </div>
+    </a>
 
-    <a href = "https://bananarepublic.gap.com/browse/product.do?pid=653763012&vid=1&policy=1&tid=brpl000039&kwid=1&ap=7&gclid=CjwKCAjwlID8BRAFEiwAnUoK1Y1W8_og8NC53CtzxrJwcIKMG1yLpj43dah2zxofosUp0IX_cOybbRoCtvcQAvD_BwE&gclsrc=aw.ds#pdp-page-content"><div class="mySlides3 m3-center">
-      <img src="mask3.jpg" style="width:40%"></a>
+    <a
+      href="https://bananarepublic.gap.com/browse/product.do?pid=653763012&vid=1&policy=1&tid=brpl000039&kwid=1&ap=7&gclid=CjwKCAjwlID8BRAFEiwAnUoK1Y1W8_og8NC53CtzxrJwcIKMG1yLpj43dah2zxofosUp0IX_cOybbRoCtvcQAvD_BwE&gclsrc=aw.ds#pdp-page-content">
+      <div class="mySlides3 m3-center">
+        <img src="mask3.jpg" style="width:40%">
+    </a>
     </div>
 
     <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -442,8 +440,10 @@
     <!-- The Submission Section -->
     <div class="m3-container m3-content m3-padding-64" style="max-width:800px" id="contact">
       <h2 class="m3-wide m3-center m3-text-white">SUBMIT ARTWORK</h2>
-      <p class="m3-opacity m3-center m3-text-white"><i>Send some artwork to be featured on our website and our Instagram!</i></p>
-      <p class="m3-opacity m3-center m3-text-white"><i> You can submit anything from masks to posters and T-Shirt designs related to Covid-19!</i></p>
+      <p class="m3-opacity m3-center m3-text-white"><i>Send some artwork to be featured on our website and our
+          Instagram!</i></p>
+      <p class="m3-opacity m3-center m3-text-white"><i> You can submit anything from masks to posters and T-Shirt
+          designs related to Covid-19!</i></p>
       <div class=" m3-padding-32">
         <div class=" m3-large m3-margin-bottom">
           <center><i class="fa fa-envelope m3-text-white" style="width:100px"> </i>
@@ -453,6 +453,31 @@
       </div>
     </div>
 
+    <!-- Current Submissions -->
+    <div class="m3-container m3-content m3-padding-64" style="max-width:800px" id="contact">
+
+      <div class="m3-text-white m3-center m3-xxlarge m3-padding-32" id="donations">Submissions</div>
+      <div class="slideshow-container">
+
+
+        <div class="mySlides4 m3-center">
+          <img src="sub1.png" style="width:40%">
+          <div class="m3-text-white m3-center m3-large m3-padding-32"></div>
+        </div>
+
+        <div class="mySlides4 m3-center">
+          <img src="sub2.png" style="width:40%">
+          <div class="m3-text-white m3-center m3-large m3-padding-32"></div>
+        </div>
+
+
+
+
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+    </div>
 
 
 
@@ -486,11 +511,12 @@
 
     </footer>
     <script>
-      var slideIndex = [1, 1, 1];
-      var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+      var slideIndex = [1, 1, 1, 1];
+      var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
       showSlides(1, 0);
       showSlides(1, 1);
       showSlides(1, 2);
+      showSlides(1, 3);
 
 
       function plusSlides(n, no) {
